@@ -175,7 +175,6 @@ class Register_model extends CI_Model{
 		'status_id'=>2
 		);
 		$this->db->trans_start();
-		
 		$this->db->where('donation_id',$donation_id);
 		$this->db->update('bb_donation',$data);
 		$this->db->trans_complete();
